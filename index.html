@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="canva.css">
+    <title>Canva</title>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="parent_box">
+
+        <button id="undo" type="button">Undo</button>
+        <button id="redo" type="button">Redo</button>
+
+        <div class="sub_parent">
+
+            <div id="canvas">
+
+            </div>
+
+            <div class="element_box">
+
+                <div id="fontDropdown">
+                    <label for="fonts">Select Font:</label>
+                    <select id="fonts" onchange="changeFont()">
+                        <option value="Arial, sans-serif">Arial</option>
+                        <option value="Times New Roman, serif">Times New Roman</option>
+                        <option value="Courier New, monospace">Courier New</option>
+                       
+                    </select>
+                </div>
+
+
+                <div id="sizeDropdown">
+                    <label for="sizes">Select Size:</label>
+                    <select id="sizes" onchange="changeSize()">
+                        <option value="12">16</option>
+                        <option value="16">20</option>
+                        <option value="20">24</option>
+                        
+                    </select>
+                </div>
+
+
+                <div id="colorDropdown">
+                    <label for="colors">Select Color:</label>
+                    <select id="colors" onchange="changeColor()">
+                        <option value="black" data-color="#000000">Black</option>
+                        <option value="red" data-color="#ff0000">Red</option>
+                        <option value="blue" data-color="#0000ff">Blue</option>
+                      
+                    </select>
+                </div>
+
+                <div class="add_text">
+                    <button id="addTextBtn" onclick="addText()">Add Text</button>
+                    <button id="deleteBtn" onclick="deleteText()">Delete text</button>
+            
+                </div>
+
+            </div>
+
+    </div>
+
+    </div>
+
+    <script src="canva.js"></script> 
+    
+</body>
+</html>
